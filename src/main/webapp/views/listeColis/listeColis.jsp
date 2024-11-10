@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Liste des Colis</title>
+    <link rel="stylesheet" href="css/listeColis.css">
 </head>
 <body>
     <h1>Liste des Colis</h1>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Suivi du Colis</title>
-    <link rel="stylesheet" href="progressionColis.css">
+    <link rel="stylesheet" href="css/progressionColis.css">
 
 </head>
 <body>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Entrer l'ID du Colis</title>
-    <link rel="stylesheet" href="progressionEnterId.css">
+    <link rel="stylesheet" href="css/progressionEnterId.css">
 </head>
 <body>
     <div class="container">

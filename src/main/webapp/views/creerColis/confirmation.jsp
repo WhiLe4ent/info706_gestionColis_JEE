@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Confirmation</title>
-        <link rel="stylesheet" href="confirmation.css">
+        <link rel="stylesheet" href="css/confirmation.css">
 
     </head>
     <body>
@@ -29,7 +29,7 @@
                 <li><strong>Date de la position :</strong> ${colis.datePosition}</li>
             </ul>
 
-            <a href="views/creerColis/creerColis.jsp">Créer un autre colis</a>
+            <a href="creerColis">Créer un autre colis</a>
             <p><a href="listeColis">Voir la Liste des Colis</a></p>
             <p><a href="suiviColis">Voir le suivi des colis</a></p>
             <p><a href="progressionColis">Gérer la progression d'un colis</a></p>

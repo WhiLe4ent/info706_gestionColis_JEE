@@ -10,7 +10,7 @@ import jakarta.servlet.annotation.WebServlet;
 /**
  * Servlet Home
  */
-@WebServlet("/")
+@WebServlet("")
 public class HomeServlet extends HttpServlet {
 
     @Override

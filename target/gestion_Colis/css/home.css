@@ -1,0 +1,52 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Container Styles */
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+}
+
+/* Title Style */
+h1 {
+    font-size: 2em;
+    color: #3a3a3a;
+    margin-bottom: 1rem;
+}
+
+/* Link Styles */
+p a {
+    display: block;
+    font-size: 1.1em;
+    color: #1e90ff;
+    text-decoration: none;
+    margin: 0.5em 0;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+p a:hover {
+    background-color: #1e90ff;
+    color: #ffffff;
+}
+
+/* Extra Spacing */
+p {
+    margin: 0.5em 0;
+}
