@@ -27,7 +27,7 @@ L'application comprend les endpoints suivants :
 ## Instructions de Déploiement
 
 1. **Compilation** (si nécessaire) :  
-   Si le projet n'a pas encore été compilé, placez-vous à la racine du projet (./info706_gestioncolis) et exécutez la commande suivante :
+   Si le projet n'a pas encore été compilé, placez-vous à la racine du projet (./info706_gestionColis_JEE) et exécutez la commande suivante :
 
    ```bash
    mvn clean install
