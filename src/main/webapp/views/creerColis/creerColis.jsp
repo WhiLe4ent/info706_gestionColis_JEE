@@ -11,6 +11,11 @@
     <div class="container">
         <h1>Enregistrer un Nouveau Colis</h1>
         <form action="creerColis" method="post">
+
+            <c:if test="${not empty errorMessage}">
+                <p class="error-message">${errorMessage}</p>
+            </c:if>
+            
             <div class="form-row">
                 <label for="id">Id :</label>
                 <input type="number" id="id" name="id" required>

@@ -32,6 +32,12 @@ public class CreerColisServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Long id = Long.parseLong(request.getParameter("id"));
+
+        if (colisService.getColis(id) != null) {
+            request.setAttribute("errorMessage", "Un colis avec cet ID existe déjà.");
+            request.getRequestDispatcher("views/creerColis/creerColis.jsp").forward(request, response);
+            return;
+        }
         String origine = request.getParameter("origine");
         String destination = request.getParameter("destination");
         Double poids = Double.parseDouble(request.getParameter("poids"));
