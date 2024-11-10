@@ -20,7 +20,7 @@ public class CreerColisServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // Redirection vers creerColis.jsp pour afficher le formulaire
-        request.getRequestDispatcher("creerColis.jsp").forward(request, response);
+        request.getRequestDispatcher("views/creerColis/creerColis.jsp").forward(request, response);
     }
 
     @Override
@@ -62,7 +62,7 @@ public class CreerColisServlet extends HttpServlet {
         request.setAttribute("colis", colisResultat);
     
         // Rediriger vers la page de confirmation
-        request.getRequestDispatcher("confirmation.jsp").forward(request, response);
+        request.getRequestDispatcher("views/creerColis/confirmation.jsp").forward(request, response);
     }
     
 }

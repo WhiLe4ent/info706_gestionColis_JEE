@@ -22,7 +22,7 @@ public class ListeColisServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Colis> colisList = colisService.listerTousLesColis();
         request.setAttribute("colisList", colisList);
-        request.getRequestDispatcher("listeColis.jsp").forward(request, response);
+        request.getRequestDispatcher("views/listeColis/listeColis.jsp").forward(request, response);
     }
 }
 
