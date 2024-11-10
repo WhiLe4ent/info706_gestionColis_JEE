@@ -15,7 +15,7 @@
             <c:if test="${not empty errorMessage}">
                 <p class="error-message">${errorMessage}</p>
             </c:if>
-            
+
             <div class="form-row">
                 <label for="id">Id :</label>
                 <input type="number" id="id" name="id" required>
@@ -62,8 +62,8 @@
                     <option value="enregistrement" ${colis.etat == 'enregistrement' ? 'selected' : ''}>Enregistrement</option>
                     <option value="en attente" ${colis.etat == 'en attente' ? 'selected' : ''}>En attente</option>
                     <option value="en acheminement" ${colis.etat == 'en acheminement' ? 'selected' : ''}>En acheminement</option>
-                    <option value="bloqué" ${colis.etat == 'bloqué' ? 'selected' : ''}>Bloqué</option>
-                    <option value="livré" ${colis.etat == 'livré' ? 'selected' : ''}>Livré</option>
+                    <option value="bloque" ${colis.etat == 'bloque' ? 'selected' : ''}>Bloque</option>
+                    <option value="livre" ${colis.etat == 'livre' ? 'selected' : ''}>Livre</option>
                 </select>
             </div>
 

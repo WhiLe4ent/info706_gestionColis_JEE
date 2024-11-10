@@ -1,5 +1,7 @@
 # Rendu Projet Jakarta – Gestion de Colis
 
+## Auteur : Gravouil Achille
+
 ## Description
 
 Cette application de suivi de colis, développée en Jakarta EE, permet à un utilisateur de créer et suivre des colis. J'ai opté pour la base de données intégrée H2 fournie par le serveur WildFly, afin de simplifier le déploiement.
@@ -8,14 +10,14 @@ Cette application de suivi de colis, développée en Jakarta EE, permet à un ut
 1. **Création de colis** : Permet la création d’un nouveau colis avec des informations de base (ID, origine, destination, etc.).
 2. **Suivi de colis** : Affiche les détails d'un colis et sa position actuelle. L'utilisateur entre l'ID du colis pour accéder à ces informations.
 3. **Progression du colis** : Permet la mise à jour de la position d'un colis existant.
-4. **Liste des colis** (en cours) : Endpoint pour afficher la liste de tous les colis (actuellement non fonctionnel).
+4. **Liste des colis** : Endpoint pour afficher la liste de tous les colis.
 
 ### Endpoints
 L'application comprend les endpoints suivants :
 - `creerColis/` : pour créer un nouveau colis
 - `suiviColis/` : pour afficher les informations d'un colis existant
 - `progressionColis/` : pour modifier la position d'un colis
-- `listeColis/` : pour afficher la liste des colis (non fonctionnel pour le moment)
+- `listeColis/` : pour afficher la liste des colis 
 
 ## Prérequis
 
@@ -43,4 +45,4 @@ Une fois déployée, l'application sera accessible à l'adresse suivante :
 ## Remarques
 
 - La base de données H2 est utilisée pour une gestion simplifiée de la persistance.
-- Le endpoint `listeColis/` n'est pas fonctionnel pour l'instant. J'ai quand même laissé pour le rendu même si ce n'était pas attendu pour voir si vous pourriez m'aider à le résoudre par curiosité.
+- Dans le endpoint `listeColis/` j'affiche la liste des colis dans le listeColis.jsp avec la balise <c:forEach>. Pour que ça fonctionne j'importe la librairie et je dois rajouter la dependency javax.servlet mais elle déclenche des warning dans les logs du serveurs wildfly. Je n'ai pas réussi à les enlever et garder l'affichage de la liste des colis...

@@ -36,8 +36,8 @@
                 <option value="enregistrement" ${colis.etat == 'enregistrement' ? 'selected' : ''}>Enregistrement</option>
                 <option value="en attente" ${colis.etat == 'en attente' ? 'selected' : ''}>En attente</option>
                 <option value="en acheminement" ${colis.etat == 'en acheminement' ? 'selected' : ''}>En acheminement</option>
-                <option value="bloqué" ${colis.etat == 'bloqué' ? 'selected' : ''}>Bloqué</option>
-                <option value="livré" ${colis.etat == 'livré' ? 'selected' : ''}>Livré</option>
+                <option value="bloque" ${colis.etat == 'bloque' ? 'selected' : ''}>Bloque</option>
+                <option value="livre" ${colis.etat == 'livre' ? 'selected' : ''}>Livre</option>
             </select><br>
 
             <button type="submit">Mettre à jour la position</button>
@@ -47,8 +47,8 @@
         <p><a href="progressionColis">Gérer la progression d'un colis</a></p>
         <p><a href="suiviColis">Suivre un autre colis</a></p>
         <p><a href="creerColis">Créer un autre colis</a></p>
-        <p><a href="/gestion_Colis">Retour à l'accueil</a></p>
         <p><a href="listeColis">Voir la Liste des Colis</a></p>
+        <p><a href="/gestion_Colis">Retour à l'accueil</a></p>
     </div>
 
 </body>

@@ -33,10 +33,6 @@ public class ColisService {
         TypedQuery<Colis> query = em.createQuery(jpql, Colis.class);
         List<Colis> listeColis = query.getResultList();
 
-        for (Colis colis : listeColis) {
-            System.out.println("ID du colis : " + colis.getId());
-        }
-
         return listeColis;
     }
 }
