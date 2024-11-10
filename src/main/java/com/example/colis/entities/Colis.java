@@ -7,6 +7,9 @@ import lombok.Getter;
 import lombok.Setter;
 import java.time.LocalDateTime;
 
+/**
+ * Entite Colis 
+ */
 @Getter
 @Setter
 @Entity

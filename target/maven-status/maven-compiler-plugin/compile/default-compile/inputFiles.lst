@@ -1,6 +1,6 @@
 /home/while4ent/Bureau/fac/M1/architecture/tp_gestion_colis/info706_gestioncolis/src/main/java/com/example/colis/servlets/SuiviColisServlet.java
+/home/while4ent/Bureau/fac/M1/architecture/tp_gestion_colis/info706_gestioncolis/src/main/java/com/example/colis/servlets/ProgressionColisServlet.java
 /home/while4ent/Bureau/fac/M1/architecture/tp_gestion_colis/info706_gestioncolis/src/main/java/com/example/colis/servlets/ListeColisServlet.java
-/home/while4ent/Bureau/fac/M1/architecture/tp_gestion_colis/info706_gestioncolis/src/main/java/com/example/colis/servlets/ProgressionColis.java
 /home/while4ent/Bureau/fac/M1/architecture/tp_gestion_colis/info706_gestioncolis/src/main/java/com/example/colis/entities/Colis.java
 /home/while4ent/Bureau/fac/M1/architecture/tp_gestion_colis/info706_gestioncolis/src/main/java/com/example/colis/utils/DateUtil.java
 /home/while4ent/Bureau/fac/M1/architecture/tp_gestion_colis/info706_gestioncolis/src/main/java/com/example/colis/servlets/CreerColisServlet.java

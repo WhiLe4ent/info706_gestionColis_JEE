@@ -9,7 +9,6 @@
     <h1>Colis créé avec succès !</h1>
     <p>Votre colis a été enregistré dans le système.</p>
 
-    <!-- Affichage des détails du colis -->
     <h2>Détails du Colis :</h2>
     <p><strong>Origine:</strong> ${colis.origine}</p>
     <p><strong>Destination:</strong> ${colis.destination}</p>
@@ -27,6 +26,6 @@
     <p><a href="listeColis">Voir la Liste des Colis</a></p>
     <p><a href="suiviColis">Voir le suivi des colis</a></p>
     <p><a href="progressionColis">Gérer la progression d'un colis</a></p>
-    <p><a href="/">Retour à l'acceuil</a></p>
+    <p><a href="/gestion_Colis">Retour à l'acceuil</a></p>
 </body>
 </html>

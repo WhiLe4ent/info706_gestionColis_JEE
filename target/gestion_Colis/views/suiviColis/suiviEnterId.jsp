@@ -9,13 +9,12 @@
     <h1>Suivi d'un Colis</h1>
     <p>Veuillez entrer l'ID du colis que vous souhaitez suivre :</p>
 
-    <!-- Formulaire pour entrer l'ID du colis -->
     <form action="suiviColis" method="GET">
         <label for="id">ID du colis :</label>
         <input type="text" id="id" name="id" required />
         <button type="submit">Suivre le colis</button>
     </form>
 
-    <p><a href="/">Retour à l'accueil</a></p>
+    <p><a href="/gestion_Colis">Retour à l'accueil</a></p>
 </body>
 </html>

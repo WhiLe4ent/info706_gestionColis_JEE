@@ -11,6 +11,10 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.time.LocalDateTime;
 
+/**
+ * Servlet CreerColis
+ * 
+ */
 @WebServlet("/creerColis")
 public class CreerColisServlet extends HttpServlet {
 
@@ -19,10 +23,12 @@ public class CreerColisServlet extends HttpServlet {
     
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // Redirection vers creerColis.jsp pour afficher le formulaire
         request.getRequestDispatcher("views/creerColis/creerColis.jsp").forward(request, response);
     }
 
+    /**
+     * Add Colis to Enity Manager
+     */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Long id = Long.parseLong(request.getParameter("id"));
@@ -38,30 +44,23 @@ public class CreerColisServlet extends HttpServlet {
         colis.setPoids(poids);
         colis.setValeur(valeur);
     
-        // Récupération et configuration des informations de PositionColis
         double latitude = Double.parseDouble(request.getParameter("latitude"));
         double longitude = Double.parseDouble(request.getParameter("longitude"));
         String emplacement = request.getParameter("emplacement");
         String etat = request.getParameter("etat");
         LocalDateTime datePosition = LocalDateTime.now();
     
-        // Initialisation de l'objet de position dans Colis
         colis.setLatitude(latitude);
         colis.setLongitude(longitude);
         colis.setEmplacement(emplacement);
         colis.setEtat(etat);
         colis.setDatePosition(datePosition);
     
-    
-        // Création du colis dans la base de données
         colisService.creerColis(colis);
 
-        Colis colisResultat = colisService.obtenirColis(colis.getId());
+        Colis colisResultat = colisService.getColis(colis.getId());
 
-        // Passer l'objet 'colis' à la page JSP via l'attribut de requête
         request.setAttribute("colis", colisResultat);
-    
-        // Rediriger vers la page de confirmation
         request.getRequestDispatcher("views/creerColis/confirmation.jsp").forward(request, response);
     }
     

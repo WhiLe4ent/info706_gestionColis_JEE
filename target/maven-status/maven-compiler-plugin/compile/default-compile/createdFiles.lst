@@ -1,6 +1,6 @@
 DateUtil.class
 src/main/java/com/example/colis/servlets/CreerColisServlet.class
-src/main/java/com/example/colis/servlets/ProgressionColis.class
+src/main/java/com/example/colis/servlets/ProgressionColisServlet.class
 src/main/java/com/example/colis/servlets/ListeColisServlet.class
 src/main/java/com/example/colis/entities/Colis.class
 src/main/java/com/example/colis/ejb/ColisService.class

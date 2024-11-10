@@ -12,6 +12,12 @@ import src.main.java.com.example.colis.entities.Colis;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * Servlet Liste Colis
+ * 
+ * Dispatch the liste of the colis in the Entity Manager
+ * 
+ */
 @WebServlet("/listeColis")
 public class ListeColisServlet extends HttpServlet {
 

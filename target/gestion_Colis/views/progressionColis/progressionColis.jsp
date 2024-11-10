@@ -8,7 +8,6 @@
 <body>
     <h1>Suivi du Colis</h1>
 
-    <!-- Affichage des informations du colis -->
     <h2>Détails du Colis :</h2>
     <p><strong>ID:</strong> ${colis.id}</p>
     <p><strong>Origine:</strong> ${colis.origine}</p>
@@ -47,7 +46,7 @@
     <p><a href="progressionColis">Gérer la progression d'un colis</a></p>
     <p><a href="suiviColis">Suivre un autre colis</a></p>
     <p><a href="creerColis">Creer un autre colis</a></p>
-    <p><a href="/">Retour à l'acceuil</a></p>
+    <p><a href="/gestion_Colis">Retour à l'acceuil</a></p>
 
 
 </body>

@@ -7,7 +7,6 @@
 </head>
 <body>
     <h1>Bienvenue !</h1>
-    <%-- <p><a href="${pageContext.request.contextPath}/creerColis.jsp">Créer un Colis</a></p> --%>
     <p><a href="creerColis">Créer un Colis</a></p>
     <p><a href="suiviColis">Suivre un Colis</a></p>
     <p><a href="progressionColis">Gérer la progression d'un colis</a></p>
