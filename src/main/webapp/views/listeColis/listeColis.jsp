@@ -1,4 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%-- <%@ taglib uri="http://jakarta.apache.org/taglibs/standard/core" prefix="c" %> --%>
+<%@ page import="java.util.List" %>
+<%@ page import="src.main.java.com.example.colis.entities.Colis" %>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -21,7 +25,7 @@
             </tr>
         </thead>
         <tbody>
-            <c:forEach var="colis" items="${colisList}">
+            <%-- <c:forEach var="colis" items="${colisList}"> Fonctionne pas, problème de lib ? 
                 <tr>
                     <td>${colis.id}</td>
                     <td>${colis.origine}</td>
@@ -30,13 +34,28 @@
                     <td>${colis.valeur}</td>
                     <td><a href="suiviColis?id=${colis.id}">Suivre</a></td>
                 </tr>
-            </c:forEach>
-        </tbody>
+            </c:forEach> --%>
+
+            <%
+                List<Colis> colisList = (List<Colis>) request.getAttribute("colisList");
+                for (Colis colis : colisList) {
+            %>
+                <tr>
+                    <td><%= colis.getId() %></td>
+                    <td><%= colis.getOrigine() %></td>
+                    <td><%= colis.getDestination() %></td>
+                    <td><%= colis.getPoids() %></td>
+                    <td><%= colis.getValeur() %></td>
+                    <td><a href="suiviColis?id=<%= colis.getId() %>">Suivre</a></td>
+                </tr>
+            <%
+                }
+            %>
     </table>
 
     <p><a href="suiviColis">Suivre un autre colis</a></p>
     <p><a href="progressionColis">Gérer la progression d'un colis</a></p>
     <p><a href="creerColis">Creer un autre colis</a></p>
-    <p><a href="gestion_Colis">Retour à l'accueil</a></p>
+    <p><a href="/gestion_Colis">Retour à l'accueil</a></p>
 </body>
 </html>

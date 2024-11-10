@@ -27,6 +27,9 @@ public class ListeColisServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Colis> colisList = colisService.listerTousLesColis();
+        for (Colis colis : colisList) {
+            System.out.println("Servlet ID du colis : " + colis.getId());
+        }
         request.setAttribute("colisList", colisList);
         request.getRequestDispatcher("views/listeColis/listeColis.jsp").forward(request, response);
     }

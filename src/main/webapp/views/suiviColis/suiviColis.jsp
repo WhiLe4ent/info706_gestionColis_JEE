@@ -24,12 +24,12 @@
         <p><strong>Emplacement:</strong> ${colis.emplacement}</p>
         <p><strong>État:</strong> ${colis.etat}</p>
 
-        <p><a href="listeColis">Voir la Liste des Colis</a></p>
         <p><a href="suiviColis?id=${colis.id}">Rafraîchir le suivi</a></p>
         <p><a href="suiviColis">Suivre un autre colis</a></p>
         <p><a href="progressionColis">Gérer la progression d'un colis</a></p>
         <p><a href="creerColis">Créer un autre colis</a></p>
         <p><a href="/gestion_Colis">Retour à l'accueil</a></p>
+        <p><a href="listeColis">Voir la Liste des Colis</a></p>
     </div>
 </body>
 </html>

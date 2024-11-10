@@ -30,10 +30,10 @@
             </ul>
 
             <a href="creerColis">Créer un autre colis</a>
-            <p><a href="listeColis">Voir la Liste des Colis</a></p>
             <p><a href="suiviColis">Voir le suivi des colis</a></p>
             <p><a href="progressionColis">Gérer la progression d'un colis</a></p>
             <p><a href="/gestion_Colis">Retour à l'acceuil</a></p>
+            <p><a href="listeColis">Voir la Liste des Colis</a></p>
         </div>
     </body>
 </html>

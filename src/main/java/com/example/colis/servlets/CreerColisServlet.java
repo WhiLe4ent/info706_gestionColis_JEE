@@ -38,6 +38,7 @@ public class CreerColisServlet extends HttpServlet {
             request.getRequestDispatcher("views/creerColis/creerColis.jsp").forward(request, response);
             return;
         }
+        
         String origine = request.getParameter("origine");
         String destination = request.getParameter("destination");
         Double poids = Double.parseDouble(request.getParameter("poids"));

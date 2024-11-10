@@ -43,12 +43,12 @@
             <button type="submit">Mettre à jour la position</button>
         </form>
 
-        <p><a href="listeColis">Voir la Liste des Colis</a></p>
         <p><a href="suiviColis?id=${colis.id}">Suivre ce colis</a></p>
         <p><a href="progressionColis">Gérer la progression d'un colis</a></p>
         <p><a href="suiviColis">Suivre un autre colis</a></p>
         <p><a href="creerColis">Créer un autre colis</a></p>
         <p><a href="/gestion_Colis">Retour à l'accueil</a></p>
+        <p><a href="listeColis">Voir la Liste des Colis</a></p>
     </div>
 
 </body>

@@ -29,7 +29,4 @@ public class Colis implements Serializable {
     private String etat;
 
     private LocalDateTime datePosition;
-
-
-
 }

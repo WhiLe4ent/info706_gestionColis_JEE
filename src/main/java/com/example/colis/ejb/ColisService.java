@@ -28,12 +28,15 @@ public class ColisService {
     public Colis getColis(Long id) {
         return em.find(Colis.class, id);
     }  
-
-
     public List<Colis> listerTousLesColis() {
         String jpql = "SELECT c FROM Colis c";         
         TypedQuery<Colis> query = em.createQuery(jpql, Colis.class);
-        List<Colis> listeColis = query.getResultList(); 
-        return listeColis ;
+        List<Colis> listeColis = query.getResultList();
+
+        for (Colis colis : listeColis) {
+            System.out.println("ID du colis : " + colis.getId());
+        }
+
+        return listeColis;
     }
 }
